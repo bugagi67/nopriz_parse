@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center; /* Центрирует текст внутри контейнера */
+}
+
+h1 {
+  margin-bottom: 20px; /* Добавляем отступ между заголовком и инпутами */
+}
+
+._input {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pars__button {
+  display: block;
+  width: 150px;
+  margin: 20px auto 0; /* Центрируем кнопку и добавляем отступы */
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pars__button:hover {
+  background-color: #45a049; /* Цвет при наведении */
+}
