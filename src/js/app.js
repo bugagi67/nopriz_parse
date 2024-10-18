@@ -23,6 +23,7 @@ export default async function main(
   async function postData(url, body) {
     const response = await fetch(url, {
       method: "POST",
+      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
         Connection: "keep-alive",
