@@ -6397,6 +6397,7 @@ function _main() {
                     _context.next = 2;
                     return fetch(url, {
                       method: "POST",
+                      mode: 'no-cors',
                       headers: {
                         "Content-Type": "application/json",
                         Connection: "keep-alive",
