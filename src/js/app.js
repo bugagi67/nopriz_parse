@@ -23,7 +23,6 @@ export default async function main(
   async function postData(url, body) {
     const response = await fetch(url, {
       method: "POST",
-      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
         Connection: "keep-alive",
@@ -79,7 +78,7 @@ export function downloadExcel(data) {
     data.length === 0 ||
     typeof data[0] !== "object"
   ) {
-    console.error("Invalid data format for Excel export");
+    console.error("Неверный формат данных для экспорта в эксель");
     return;
   }
   const worksheet = XLSX.utils.json_to_sheet(data);
