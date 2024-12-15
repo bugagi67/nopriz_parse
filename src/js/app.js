@@ -15,7 +15,7 @@ export default async function main(
   body,
   entrypage,
   endpage,
-  serch = "Проект ",
+  serch = "",
 ) {
   let counter = entrypage;
   let array = [];
@@ -24,6 +24,7 @@ export default async function main(
     const response = await fetch(url, {
       method: "POST",
       headers: {
+        "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
         Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br",
@@ -67,7 +68,10 @@ export function editingJson(data) {
       sro,
       members_total_liability,
       ...rest
-    }) => rest,
+    }) => ({
+      ...rest,
+      member_status: member_status ? member_status.title : "",
+    }),
   );
   return cleanedData;
 }

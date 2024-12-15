@@ -9,13 +9,21 @@ import {
 import main from "./js/app";
 
 const URL = "https://reestr.nopriz.ru/api/sro/all/member/list";
+// const URL_NOSTROY = "https://reestr.nostroy.ru/api/sro/all/member/list";
 const BODY = {
   filters: {},
   page: 8,
   pageCount: "100",
   sortBy: {},
-  searchString: "Проект ",
+  searchString: "",
 };
+// const BODY_NOSTROY = {
+//   filters: {},
+//   page: 1,
+//   pageCount: "100",
+//   sortBy: {},
+//   searchString: "Специализированный застройщик",
+// };
 
 parsButton.addEventListener("click", () => {
   if (endPointInput.value !== "" && entryPointInput.value !== "") {
