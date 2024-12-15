@@ -6816,7 +6816,8 @@ function _main() {
                     return fetch(url, {
                       method: "POST",
                       headers: {
-                        "Access-Control-Allow-Origin": "*",
+                        "Access-Control-Allow-Origin": "https://reestr.nopriz.ru",
+                        "Access-Control-Expose-Headers": "link",
                         "Content-Type": "application/json",
                         Connection: "keep-alive",
                         "Accept-Encoding": "gzip, deflate, br"
