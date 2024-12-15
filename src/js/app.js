@@ -24,7 +24,8 @@ export default async function main(
     const response = await fetch(url, {
       method: "POST",
       headers: {
-        Origin: "https://reestr.nopriz.ru",
+        Referer: "https://bugagi67.github.io/",
+        Origin: "https://bugagi67.github.io/",
         "Content-Type": "application/json",
         Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br",
